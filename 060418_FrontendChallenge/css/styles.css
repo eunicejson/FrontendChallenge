@@ -5,55 +5,69 @@
 body {
   background-color: #fff;
   font-size: 16px;
-
 }
 
 .container {
-  width: 50%;
-  height: auto;
+  width: 570px;
   margin: 0 auto;
   background-color: #555667;
 }
 
-.header {
+.inner-container {
+  width: 530px;
   margin: 0 auto;
-  width: 573px;
+  padding-bottom: 25px;
 }
 
-.navigation_bar{
-  width: 100%;
-  min-height: 100px;
-  background-image: url("../images/navigation_bar.png");
-  object-fit: cover;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
+.header {
   margin: 0 auto;
+  width: 571px;
+  position: relative;
+}
+
+.navigation_bar {
+  width: 100%;
 }
 
 .map {
   margin: 0 auto;
   background-image: url("../images/map_image.png");
   min-height: 500px;
-  width: 550px;
   object-fit: cover;
   background-repeat: no-repeat;
   background-position: 100% 20%;
-  margin-top: -10px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  z-index: -1;
+  margin-top: -5px;
+
 }
 
 .app_background {
   background-color: #fff;
-  width: 550px;
   margin: 0 auto;
   padding-top: 25px;
-  height: 1250px;
-  margin-top: -10px;
+  margin-top: 20px;
+}
+
+.grey_button {
+  height:12px;
+  width: 70px;
+  border-radius: 20px;
+  background-color: #29272D;
+  opacity: 0.4;
+  margin: 0 auto;
+  margin-top: -3px;
+  margin-bottom: 15px;
+
 }
 
 .search_section {
   min-height: 40px;
   margin: 0 auto;
 }
+
+
 
 .search_section p {
   width: 440px;
@@ -62,15 +76,14 @@ body {
   padding: 15px;
   background-color: #eeeeee;
   border-radius: 10px;
-  margin: 0 auto;
-  margin-left: 40px;
+  margin-left: 20px;
 }
 
 .search_icon {
   display: inline-block;
   float: left;
   margin-top: 10px;
-  margin-left: 60px;
+  margin-left: 45px;
   padding-right: 10px;
 }
 
@@ -78,11 +91,10 @@ body {
   display: inline-block;
   float: right;
   margin-top: -40px;
-  margin-right: 15px;
+  margin-right: 18px;
 }
 
 .washington_state {
-  width: 550px;
   display: block;
   background-color: #1DC55F;
   padding: 20px;
@@ -102,7 +114,7 @@ body {
   color: #fff;
   font-size: 2em;
   transform: translate(-803%, -803%) rotate(180deg);
-  margin: 230px 0 0 510px;
+  margin: 230px 0 0 489px;
 }
 
 .bus_list h3 {
@@ -161,7 +173,6 @@ h4 {
 }
 
 .out_of_service {
-  border: 1px solid #6699ff;
   min-height: 50px;
   margin-top: -10px;
   display: inline;
@@ -175,4 +186,8 @@ h4 {
   padding: 0;
   margin-top: 52px;
 
+}
+
+.special {
+  border: none !important;
 }
